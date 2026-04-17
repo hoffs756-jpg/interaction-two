@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+.weather-box {
+  display: inline-block;
+}
+
+
+.icon {
+  margin: 20px auto;
+}
+
+
+.sun {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #f4a300;
+}
+
+
+.cloud {
+  width: 28px;
+  height: 14px;
+  border-radius: 10px;
+  background: #888;
+  position: relative;
+}
+
+.cloud::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #888;
+  top: -8px;
+  left: 6px;
+}
+
+
+.drop {
+  width: 10px;
+  height: 14px;
+  background: #378add;
+  border-radius: 0 0 50% 50%;
+}
